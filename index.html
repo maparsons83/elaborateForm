@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Your Info</legend>
+            <p>
+                <label for="name">
+                    Name: <input type="text" id="name" autofocus>
+                </label><br>
+                <label for="email">
+                    Email: <input type="email" id="email">
+                </label><br>
+                <label>
+                    Phone: <input type="tel" id="tel">
+                </label><br>
+                <label for="homepage">
+                    Homepage: <input type="url" id="url">
+                </label><br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>What is your preferred method of communication?</legend>
+            <p>
+                <label for="communication_1">
+                    <input type="radio" id="com1" name="com">
+                    Phone
+                </label>
+                <label for="communication_2">
+                    <input type="radio" id="com2" name="com">
+                    Email
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Which devices do you use?</legend>
+            <p>
+                <label for="device_1">
+                    <input type="checkbox" id="iOS">
+                    iOS
+                </label>
+                <label for="device_2">
+                    <input type="checkbox" id="Android">
+                    Android
+                </label>
+                <label for="device_3">
+                    <input type="checkbox" id="MAC">
+                    MAC
+                </label>
+                <label for="device_4">
+                    <input type="checkbox" id="Windows">
+                    Windows
+                </label>
+                <label for="device_5">
+                    <input type="checkbox" id="Chrome">
+                    Chrome OS (Chromebook)
+                </label>
+                <label for="device_6">
+                    <input type="checkbox" id="Linux">
+                    Linux
+                </label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Your inquiry</legend>
+            <p>
+                <label for="inquiryType">
+                    <select id="inquiry">
+                        <option>Feedback</option>
+                        <option>Report a bug</option>
+                        <option>Account question</option>
+                        <option>General questions</option>
+                    </select>
+                </label><br>
+                <label for="subscription">
+                    Subscription: <input type="text" value="Premium" disabled>
+                </label><br>
+                <label for="comments">Add your comment here:</label><br>
+                <textarea cols="30" rows="10">Comments</textarea>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Please rate this form</legend>
+            <input type="range" name="score" id="score" min="0" max="10" step="1">
+        </fieldset>
+        <button type="reset">
+            Reset Form
+        </button>
+    </form>
+    
+</body>
+</html>
